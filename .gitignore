@@ -1,0 +1,42 @@
+# Config Files #
+######################
+.htaccess
+.htpasswd
+wp-config.php
+
+# Caches, Modules, Components, etc #
+############################
+wp-content/cache/
+.sass-cache/
+node_modules/
+bower_components/
+wp-content/uploads/
+object_cache
+
+# Other #
+####################
+.DS_Store*
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+*.sql
+*.sqlite
+*.lock
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.swp
+*.swo
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
