@@ -8,11 +8,11 @@
 ?>
 <?php get_header(); ?>
 
-<div class="tier">
+<div class="tier tier--mist">
     <div class="wrapper">
         <div class="content" role="main">
             <?php if (have_posts()): ?>
-                <h1>Blog Posts
+                <h1 class="isVisuallyHidden">Blog Posts
                     <?php if (is_tag()) { echo " tagged with " . single_tag_title('', false); } ?>
                     <?php if (is_category()) { echo " categorized as " . single_cat_title('', false); } ?>
                     <?php if (is_author()) { echo " authored by " . get_the_author(); } ?>
@@ -30,7 +30,7 @@
                         <div class="card">
                             <div class="card__media">
                                 <a href="<?php esc_url(the_permalink()); ?>">
-                                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>" alt="" />
+                                    <img class="blockImage" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>" alt="" />
                                 </a>
                             </div>
                             <div class="card__bd">
