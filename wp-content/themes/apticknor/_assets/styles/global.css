@@ -1,0 +1,302 @@
+/* ---------------------------------------------------------------------
+   Font Embeds
+
+   font-family: "Montserrat", Helvetica, Arial, sans-serif;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+---------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* ---------------------------------------------------------------------
+   Base Reset (Thanks Eric Meyer)
+---------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+img, audio, canvas, video, picture, iframe, embed {
+    max-width: 100% !important; /* media should never overflows it's container */
+}
+
+/* ---------------------------------------------------------------------
+   HTML5 Elements
+---------------------------------------------------------------------- */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+audio, canvas, video, progress, picture {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
+   Form Elements
+---------------------------------------------------------------------- */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------
+   Element Defaults
+---------------------------------------------------------------------- */
+body {
+    background-color: #ffffff;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    font-style: normal;
+    font-weight: normal;
+    color: #8e8e8e;
+}
+
+a {
+    color: #17b594;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+   Utility Classes
+---------------------------------------------------------------------- */
+.isVisuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.blockImage {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------
+   Global Masthead
+---------------------------------------------------------------------- */
+.masthead {
+
+}
+
+/* ---------------------------------------------------------------------
+   Global Footer
+---------------------------------------------------------------------- */
+.footer {
+
+}
+
+/* ---------------------------------------------------------------------
+   Tier
+---------------------------------------------------------------------- */
+.tier {
+    padding: 20px 0;
+    background-color: transparent; /* always transparent unless extended */
+}
+
+/* always clear a tier in case there is uncleared content that is floated */
+.tier:before,
+.tier:after {
+    content: " ";
+    display: table;
+}
+
+.tier:after {
+    clear: both;
+}
+
+/* tier extensions apply background */
+.tier--white {
+    background-color: #ffffff;
+}
+
+.tier--mist {
+    background-color: #f2f4f1;
+}
+
+.tier--mid {
+    background-color: #878f9a;
+}
+
+.tier--bright {
+    background-color: #17b594;
+}
+
+/* ---------------------------------------------------------------------
+   Wrapper
+---------------------------------------------------------------------- */
+.wrapper {
+    max-width: 1280px;
+    min-width: 240px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.wrapper--noPad {
+    padding: 0 !important; /* push the wrapper edge to edge */
+}
+
+@media screen and (min-width: 32.5em) {
+    .wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 48.75em) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+
+/* ---------------------------------------------------------------------
+   Heading
+---------------------------------------------------------------------- */
+.hdg {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+
+/* colors */
+.hdg--white,
+.hdg--white a {
+    color: #ffffff;
+}
+
+.hdg--mist,
+.hdg--mist a {
+    color: #f2f4f1;
+}
+
+.hdg--mid,
+.hdg--mid a {
+    color: #878f9a;
+}
+
+.hdg--bright,
+.hdg--bright a {
+    color: #17b594;
+}
+
+
+/* sizes */
+.hdg--sm {
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------------------------
+   Icons
+---------------------------------------------------------------------- */
+.icn {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.icn--example {
+    width: 22px;
+    height: 22px;
+}
+
+/* ---------------------------------------------------------------------
+   User Content
+---------------------------------------------------------------------- */
+.userContent {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    font-style: normal;
+    font-weight: normal;
+    color: #8e8e8e;
+}
+
+.userContent > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
