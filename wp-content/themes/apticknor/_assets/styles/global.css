@@ -234,7 +234,7 @@ a:focus {
 ---------------------------------------------------------------------- */
 .hdg {
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.3;
@@ -264,8 +264,24 @@ a:focus {
 
 
 /* sizes */
+.hdg--xs {
+    font-size: 0.75rem;
+}
+
 .hdg--sm {
-    font-size: 16px;
+    font-size: 1rem;
+}
+
+.hdg--md {
+    font-size: 1.333rem;
+}
+
+.hdg--lg {
+    font-size: 1.777rem;
+}
+
+.hdg--xl {
+    font-size: 2.369rem;
 }
 
 /* ---------------------------------------------------------------------

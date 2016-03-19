@@ -27,7 +27,7 @@
                 <ol>
                 <?php rewind_posts(); while (have_posts()) : the_post(); ?>
                     <li>
-                        <h2>
+                        <h2 class="hdg hdg--md hdg--bright">
                             <a href="<?php esc_url(the_permalink()); ?>">
                                 <?php the_title(); ?>
                             </a>
