@@ -24,26 +24,25 @@
                         echo " from " . $archiveDate;
                     } ?>
                 </h1>
-                <ol>
+                <ol class="vlist">
                 <?php rewind_posts(); while (have_posts()) : the_post(); ?>
                     <li>
-                        <h2 class="hdg hdg--md hdg--bright">
-                            <a href="<?php esc_url(the_permalink()); ?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h2>
-                        <div>
-                            <?php if (has_post_thumbnail()) { ?>
+                        <div class="card">
+                            <div class="card__media">
                                 <a href="<?php esc_url(the_permalink()); ?>">
-                                <?php the_post_thumbnail(); ?>
+                                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>" alt="" />
                                 </a>
-                            <?php } ?>
-                        </div>
-                        <div>
-                            <?php the_date(); ?>
-                        </div>
-                        <div>
-                            <?php the_excerpt(); ?>
+                            </div>
+                            <div class="card__bd">
+                                <h2 class="hdg hdg--md hdg--bright">
+                                    <a href="<?php esc_url(the_permalink()); ?>">
+                                        <?php the_title(); ?>
+                                    </a>
+                                </h2>
+                                <?php the_date(); ?>
+                                <br/>
+                                <?php the_excerpt(); ?>
+                            </div>
                         </div>
                     </li>
                 <?php endwhile; ?>
