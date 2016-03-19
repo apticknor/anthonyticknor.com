@@ -10,7 +10,6 @@ wp-content/cache/
 .sass-cache/
 node_modules/
 bower_components/
-wp-content/uploads/
 object_cache
 
 # Other #
