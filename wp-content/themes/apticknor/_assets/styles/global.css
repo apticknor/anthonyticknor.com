@@ -210,23 +210,7 @@ a:focus {
     max-width: 980px;
     min-width: 240px;
     margin: 0 auto;
-    padding: 0 10px;
-}
-
-.wrapper--noPad {
-    padding: 0 !important; /* push the wrapper edge to edge */
-}
-
-@media screen and (min-width: 32.5em) {
-    .wrapper {
-        padding: 0 20px;
-    }
-}
-
-@media screen and (min-width: 48.75em) {
-    .wrapper {
-        padding: 0 30px;
-    }
+    padding: 0 20px;
 }
 
 /* ---------------------------------------------------------------------
