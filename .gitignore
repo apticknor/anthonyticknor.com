@@ -1,18 +1,12 @@
-# Config Files #
-######################
+# Dev Files / Folders #
+####################
+/node_modules
+/vendor
+/.idea
+.env
 .htaccess
-.htpasswd
-wp-config.php
 
-# Caches, Modules, Components, etc #
-############################
-wp-content/cache/
-.sass-cache/
-node_modules/
-bower_components/
-object_cache
-
-# Other #
+# Other File Types #
 ####################
 .DS_Store*
 ._*
@@ -22,7 +16,6 @@ Thumbs.db
 *.log
 *.sql
 *.sqlite
-*.lock
 *.com
 *.class
 *.dll
