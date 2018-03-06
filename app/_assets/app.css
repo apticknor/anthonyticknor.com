@@ -1,0 +1,254 @@
+/* ---------------------------------------------------------------------
+ Fonts
+------------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900');
+
+/* ---------------------------------------------------------------------
+ RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+img, audio, canvas, video, picture, iframe, embed {
+    max-width: 100% !important; /* media should never overflows it's container */
+}
+
+/* ---------------------------------------------------------------------
+ HTML5 Elements
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+audio, canvas, video, progress, picture {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(0,0,0,.3);
+}
+
+:-moz-placeholder {
+   color: rgba(0,0,0,.3);
+}
+
+/* ---------------------------------------------------------------------
+ Variables
+------------------------------------------------------------------------ */
+:root {
+    --color-transparent: rgba(0,0,0,0);
+    --color-white: #ffffff;
+    --color-dark: #3a3a3a;
+    --color-black: #000000;
+    --color-accent: #e74c3c;
+    --fontFamily-brand: "Merriweather", Helvetica, Arial, sans-serif;
+}
+
+/* ---------------------------------------------------------------------
+ Base Styles
+------------------------------------------------------------------------ */
+body {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-family: var(--fontFamily-brand);
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: normal;
+    font-weight: normal;
+    overflow-y: scroll;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: var(--color-transparent);
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+/* add extra space before the in page anchors */
+:target:before {
+    content: " ";
+    display: block;
+    height: 20px;
+    margin: -20px 0 0 0;
+}
+
+/* ---------------------------------------------------------------------
+ Display Utils
+------------------------------------------------------------------------ */
+.isBlock {
+    display: block;
+}
+
+.isInline {
+    display: inline;
+}
+
+/* ---------------------------------------------------------------------
+ Masthead
+------------------------------------------------------------------------ */
+.masthead {
+
+}
+
+/* ---------------------------------------------------------------------
+ Main
+------------------------------------------------------------------------ */
+.main {
+    padding: 30px;
+}
+
+/* ---------------------------------------------------------------------
+ Footer
+------------------------------------------------------------------------ */
+.footer {
+
+}
+
+/* ---------------------------------------------------------------------
+ Tier
+------------------------------------------------------------------------ */
+.tier {
+    background-color: var(--color-transparent);
+}
+
+.tier:before,
+.tier:after {
+    content: " ";
+    display: table;
+}
+
+.tier:after {
+    clear: both;
+}
+
+/* ---------------------------------------------------------------------
+ Wrapper
+------------------------------------------------------------------------ */
+.wrapper {
+    box-sizing: border-box;
+    min-width: 240px;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.wrapper--wide {
+    max-width: 2000px;
+}
+
+.wrapper--narrow {
+    max-width: 800px;
+}
+
+/* ---------------------------------------------------------------------
+ Foreward
+------------------------------------------------------------------------ */
+.foreward__hd {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 600px) {
+    .foreward__hd {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 800px) {
+    .foreward__hd {
+        font-size: 1.75rem;
+    }
+}
+
+/* ---------------------------------------------------------------------
+ Content
+------------------------------------------------------------------------ */
+.content > *:not(:last-child) { margin-bottom: 20px; }
