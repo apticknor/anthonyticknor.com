@@ -24,7 +24,7 @@
                 <main class="main" role="main">
                     <div class="foreward">
                         <div class="foreward__hd">
-                            <h1>Hi. I’m Anthony Ticknor, a web designer and VP of Technology at <a href="https://rileyhayes.com/">Riley Hayes</a>.</h1>
+                            <h1>Hi. I’m Anthony Ticknor, a web designer and Technology Director at <a href="https://irishtitan.com/">Irish Titan</a>.</h1>
                         </div>
                         <div class="foreward__bd">
                             <div class="content">
@@ -60,9 +60,9 @@
             },
             "affiliation": {
                 "@type": "Organization",
-                "name": "Riley Hayes Advertising"
+                "name": "Irish Titan"
             },
-            "jobTitle": "Vice President of Technology",
+            "jobTitle": "Technology Director",
             "image": "http://www.anthonyticknor.com/_assets/images/me.jpg",
             "url": "http://www.anthonyticknor.com"
         }
