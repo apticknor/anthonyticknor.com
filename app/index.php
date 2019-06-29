@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Anthony Ticknor</title>
+        <meta name="description" content="Hi. I’m Anthony Ticknor, a web designer and Technology Director at Irish Titan.">
         <link rel=stylesheet media="screen and (min-width: 1em)" href="_assets/app.css">
     </head>
     <body>
