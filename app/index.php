@@ -1,20 +1,29 @@
+<?php
+    // hero image - webp
+    // Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading
+    // A long cache lifetime can speed up repeat visits to your page. - cache ttl hero, css, js
+    // The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. Learn more.
+    // use http2
+?>
 <!doctype html>
 <html lang="en-us">
     <head>
-        <script>document.documentElement.className += 'js';</script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Anthony Ticknor</title>
-        <meta name="description" content="Hi. I’m Anthony Ticknor, a web designer and Technology Director at Irish Titan.">
-        <link rel=stylesheet media="screen and (min-width: 1em)" href="_assets/app.css">
+        <meta name="description" content="Hi. I’m Anthony Ticknor, a web designer and Technology Director at Irish Titan." />
+        <link rel="canonical" href="https://anthonyticknor.com" />
+        <link rel=stylesheet media="screen and (min-width: 1em)" href="_assets/app.css" />
     </head>
     <body>
         <div class="tier">
             <div class="wrapper wrapper--wide">
                 <div class="hero">
                     <picture class="isBlock">
-                        <source srcset="_assets/images/hero.jpg" media="(min-width: 600px)"></source>
-                        <source srcset="_assets/images/hero-narrow.jpg"></source>
+                        <source srcset="_assets/images/hero.webp" type="image/webp" media="(min-width: 600px)" />
+                        <source srcset="_assets/images/hero-narrow.webp" type="image/webp" />
+                        <source srcset="_assets/images/hero.jpg" type="image/jpeg" media="(min-width: 600px)" />
+                        <source srcset="_assets/images/hero-narrow.jpg" type="image/jpeg" />
                         <img class="isBlock" srcset="_assets/images/hero.jpg" alt="Anthony Ticknor" />
                     </picture>
                 </div>
@@ -45,7 +54,7 @@
 
         <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Person",
             "givenName": "Anthony",
             "familyName": "Ticknor",
@@ -64,14 +73,9 @@
                 "name": "Irish Titan"
             },
             "jobTitle": "Technology Director",
-            "image": "http://www.anthonyticknor.com/_assets/images/me.jpg",
-            "url": "http://www.anthonyticknor.com"
+            "image": "https://anthonyticknor.com/_assets/images/me.jpg",
+            "url": "https://anthonyticknor.com"
         }
         </script>
-        
-        <?php
-            // <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            // <script src="_assets/app.js"></script>
-        ?>
     </body>
 </html>
